@@ -1,4 +1,4 @@
-PokeFetchApp
+# PokeFetchApp
 
 A web application that allows the user to search for a Pokémon and get data about them.
 
