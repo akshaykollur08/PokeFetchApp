@@ -1,0 +1,63 @@
+<!-- Structure of PokéFetch with nicely provided structure of the app with, input, buttons, and descriptions
+ that easily allow the user to determine stats of Pokémon.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4477346418920222"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéFetch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Containment for the heading that invites the user, search box, and submit button. -->
+    <div class="pokemonForm">
+        <h1>PokéFetch: Enter a Pokémon, Get Information!</h1>
+        <input type="text" id="pokemonName" placeholder="Enter Pokémon Name">
+        <!-- When this fetch button is clicked, it activates the fetchData() function which displays information about
+        the inputted Pokémon the user provided. -->
+        <button onclick="fetchData()" id="fetchButton">Fetch Pokémon</button>
+    </div>
+
+
+
+
+
+    <!--Card format to look like a Pokémon card design. It contains the image, that begins as a question mark
+    until the user enters a valid Pokémon. It contains all various descriptors of information. -->
+    <div class="card" style="display: block">
+        <img src="question.webp" alt="Pokémon Sprite" id="pokemonSprite" style="display: block">
+        <p id="smallReferenceText" style="display: hidden"></p>
+
+
+
+        <!-- Components of the descriptions. This includes the Pokémon's id number, full name, 
+         a cool description, the type, height, and weight. -->
+        <div class="descriptors">
+            <br>
+            <h1 id="pokemonId">No. ????: </h1>
+            <h1 id="pokemonFullName">????</h1>
+            <p id="coolDescription">????</p>
+            <p id="typeDisplay">TYPE: ????</p>
+            <p id="heightDisplay">HEIGHT: ????</p>
+            <p id="weightDisplay">WEIGHT: ????</p>
+        </div>
+        <!-- Horizontal division bar to space the quick informational facts with the longer description of the Pokémon.-->
+        <hr id="spacer">
+        <!-- The second components of the Pokémon's information include the Pokémon's full description and a link to the 
+        Pokémon database. The database shows the strengths and weaknesses of specific types of a certain Pokémon. -->
+        <div class="secondDescriptors">
+            <p id="fullDescription">????</p>
+            <a href="https://pokemondb.net/type" target=”_blank” attribute>Pokémon Database Tips</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <p>&copy; 2024 Akshay Kollur</p>
+</body>
+
+</html>

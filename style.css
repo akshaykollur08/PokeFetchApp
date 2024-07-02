@@ -1,0 +1,178 @@
+body 
+{
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    text-align: center;
+    max-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+.pokemonForm
+{
+    margin: 20px;
+    align-items: center;
+}
+
+h1
+{
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+
+
+#pokemonName {
+    font-family: inherit;
+    padding: 1.5rem;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    border: 0.2rem solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 1rem;
+    margin: 1.5rem; 
+    width: 80%; 
+    
+}
+
+#pokemonName::placeholder {
+    font-style: italic;
+}
+
+#fetchButton {
+    padding: 2rem 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 100%, 47%);
+    color: #f0f0f0;
+    border: 0.5rem solid black;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+
+#fetchButton:hover {
+    background-color: hsl(0, 100%, 57%);
+}
+
+
+.card {
+    background: linear-gradient(180deg, lightskyblue, #6082b6);
+    padding: 2rem 5%; 
+    box-shadow: 0.2rem 0.2rem 0.5rem hsla(0, 0%, 0%, 0.575);
+    width: 90%; 
+    max-width: 400px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: auto;
+
+}
+
+
+#pokemonSprite {
+    border: 15px solid black;
+    background: linear-gradient(180deg, lightskyblue, #6082b6);
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.pokeImg[title]:hover::after
+{
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left:0;
+
+}
+
+.descriptors {
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    
+}
+
+.descriptors p {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    text-align: center;
+
+    
+}
+
+
+
+
+#coolDescription
+{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-style: italic;
+
+
+
+}
+
+.descriptors h1
+{
+    text-align: center;
+    margin: auto;
+    font-size: 1.75rem;
+    display: inline;
+    
+}
+
+
+
+.secondDescriptors
+{
+    font-size: 1.125rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#spacer
+{
+    height: 0.25rem;
+    background-color: black;
+    border: none;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
