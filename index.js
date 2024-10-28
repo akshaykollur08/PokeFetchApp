@@ -203,6 +203,7 @@ async function fetchData()
 
 
       // Assignment of variables from the document with data scraped and collected from the RESTful PokeApi.
+      //? Next implementation, make this into an update function...
       pokemonImgElement.src = pokemonSprite;
       pokemonImgElement.style.display = "block";
 
