@@ -10,6 +10,6 @@ It displays essential details including the image, Pokédex entry number, name, 
 
 PokeFetch is particularly helpful when playing Pokémon, providing intuitive information at your fingertips to optimize gameplay strategies and decisions.
 
-Checkout the production version of this web application here: https://pokefetchapp.netlify.app/
+Checkout the production version of this web application on mobile, computer, tablet, etc, here: https://pokefetchapp.netlify.app/
 
 If any questions, issues, or conerns arise, contact: akshaykollur08@gmail.com
