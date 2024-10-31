@@ -16,7 +16,7 @@ async function fetchData()
   // Citations is initially set to hidden
   const smallReferenceText = document.getElementById("smallReferenceText");
   smallReferenceText.textContent = "";
-  smallReferenceText.style.display = "hidden";
+  smallReferenceText.style.display = "none";
 
 
 
@@ -263,7 +263,7 @@ document.addEventListener("keydown", async (event) =>
 
   const smallReferenceText = document.getElementById("smallReferenceText");
   smallReferenceText.textContent = "";
-  smallReferenceText.style.display = "hidden";
+  smallReferenceText.style.display = "none";
 
 
 
