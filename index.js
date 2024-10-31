@@ -139,6 +139,7 @@ async function fetchData()
       pokemonType = types.join(" & ");
 
 
+      // Computations for the quantitative data for the pokemon
       let pokemonHeight = (data.height / 10) * 3.2808;
       const pokemonFeet = Math.trunc(pokemonHeight);
 
@@ -232,7 +233,7 @@ async function fetchData()
 
 
       smallReferenceText.textContent = "";
-      smallReferenceText.style.display = "hidden";
+      smallReferenceText.style.display = "none";
 
       pokemonId.textContent = "No. ????: "
       pokemonFullName.textContent = "????";
@@ -485,7 +486,7 @@ document.addEventListener("keydown", async (event) =>
 
 
         smallReferenceText.textContent = "";
-        smallReferenceText.style.display = "hidden";
+        smallReferenceText.style.display = "none";
 
         pokemonId.textContent = "No. ????: "
         pokemonFullName.textContent = "????";
@@ -513,7 +514,7 @@ document.addEventListener("keydown", async (event) =>
     pokemonName.value = "";
 
     smallReferenceText.textContent = "";
-    smallReferenceText.style.display = "hidden";
+    smallReferenceText.style.display = "none";
 
     pokemonId.textContent = "No. ????: "
     pokemonFullName.textContent = "????";
